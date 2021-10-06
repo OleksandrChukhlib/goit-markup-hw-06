@@ -366,6 +366,8 @@
             </address>
             </div>
 
+<!--Join Us -->
+
             <div class="join-us">
                 <p class="join-us-text">Присоединяйтесь</p>
                 <ul class="join-us-list">
@@ -402,20 +404,63 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
+<!--E-mail Input -->
+
+<form class="mail-input-form">
+    <div class="form-field">
+    <label class="form-label" for="mail-input">Подпишитесь на рассылку</label>
+    <input type="email" name="mail-input" id="mail-input" placeholder="E-mail">
+    </div>
+
+    <button class="button" type="submit">Подписаться
+        <svg class="icon-btn-form" width="24" height="24">
+            <use href="./images/icons.svg#icon-send"></use>
+        </svg>
+    </button>
+</form>
+</div>
 
     </footer>
 
+    <!-- Modal vindow -->
+
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
+
             <button data-modal-close type="button" class="button-modal">
                 <svg class="icon-button-modal" weight="11px" height="11px">
                     <use href="./images/icons.svg#icon-close" ></use>
                 </svg>
             </button>
+<form class="modal-form">
+            <p class="text">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="modal-form-fild">
+                <label class="modal-label" for="name">Имя</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="modal-form-fild">
+                <label class="modal-label" for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+
+            <div class="modal-form-fild">
+                <label class="modal-label" for="email">Почта</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="modal-form-fild">
+                <label class="modal-label" for="comment">Комментарий</label>
+                <input type="text" name="comment" id="comment">
+            </div>
+</form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+
+
+
 </body>
 
 </html>

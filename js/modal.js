@@ -1,3 +1,4 @@
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -12,3 +13,19 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+
+    (() => {
+        document
+            .querySelector('.mail-input-form')
+            .addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+            });
+    })();
+
