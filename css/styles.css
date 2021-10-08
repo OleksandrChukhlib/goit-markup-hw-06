@@ -1025,17 +1025,26 @@ body {
   appearance: none;
 }
 
-.checkbox-icon {
+.icon-mark {
+  position: relative;
+  top: 2px;
   display: inline-block;
-  margin-right: 7px;
+  margin-right: 8px;
 
   width: 16px;
   height: 15px;
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
+  background-origin: border-box;
+  fill: none;
+  transition: background-color var(--taming-function)
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--taming-function) cubic-bezier(0.4, 0, 0.2, 1),
+    fill var(--taming-function) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox:checked + .icon-mark {
   background-color: var(--accent-color);
-  background-origin: border-box;
+  border-color: var(--accent-color);
+  fill: var(--white-color);
 }
